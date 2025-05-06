@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot by Naman Bhatt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="header">
+            <h2>Chatbot</h2>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <!-- Chat messages will appear here -->
+        </div>
+
+        <div class="footer">
+            <textarea id="text-input" placeholder="Type a message..."></textarea>
+            <div class="controls">
+                <select id="language" name="language">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <!-- Add other languages as needed -->
+                </select>
+                <button onclick="handleSummarize()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.min.js"></script>
+</body>
+</html>
+
