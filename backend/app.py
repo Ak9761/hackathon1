@@ -25,6 +25,7 @@ def translate_text(text, target_lang='en'):
 @app.route('/summarize', methods=['POST'])
 def summarize():
     data = request.get_json()
+    print("Received request:", data)
     input_text = data.get('text', '')
     language = data.get('language', 'en')  # Default to English if no language is provided
 
